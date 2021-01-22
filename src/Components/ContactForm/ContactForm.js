@@ -5,15 +5,15 @@ import s from "./ContactForm.module.css"
 
  const INIITAL_STATE = {
         name: '',
-        phone: '', 
-    }
+        phone: '',}
+    
 class ContactForm extends Component {
    
     state = INIITAL_STATE
 
     handleChangeForm = ({ target }) => {
         const { name, value } = target
-        this.setState({[name]: value})
+        this.setState({ [name]: value })
     } 
 
     handleFormSubmit = (event) => {
@@ -26,7 +26,6 @@ class ContactForm extends Component {
         
         onAdd({ id: uuid(), name, phone })
         this.resetForm()
-
     }
 
     validateForm = () => {

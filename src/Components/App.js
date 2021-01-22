@@ -32,6 +32,7 @@ class App extends Component {
 
     return !isExistContacts
   }
+  
   handleRemoveContact = (id) =>
     this.setState(({ contacts }) =>({ contacts: contacts.filter((contact) => contact.id !== id) }))
   

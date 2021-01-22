@@ -21,6 +21,7 @@ import s from './ContactList.module.css'
 //         </ul>
 //     )
 // }
+
 function ContactList({ contacts, onRemove }) {
   return (
     <ul className={s.list}>
@@ -30,13 +31,12 @@ function ContactList({ contacts, onRemove }) {
           <button
             className={s.button}
             type="button"
-            onClick={() => onRemove (id)}
-          >
+            onClick={() => onRemove (id)}>
             Delete
           </button>
-        </li>
-      ))}
+        </li>))}
     </ul>
   );
 }
+
 export default ContactList
